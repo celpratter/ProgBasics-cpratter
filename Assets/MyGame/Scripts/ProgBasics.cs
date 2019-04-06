@@ -28,6 +28,10 @@ public class ProgBasics : MonoBehaviour
         // Gleichheits Operatoren
         Debug.Log("Gleichheits Operatoren == " + (3 == 3));
         Debug.Log("Gleichheits Operatoren != " + (2 != 2));
+
+        //Logische Operatoren
+        Debug.Log("Logische Operatoren && " + (3 > 2 && 1 < 2));
+        Debug.Log("Logische Operatoren | " + (3 < 2 | 1 < 2));
     }
 
     // Update is called once per frame
