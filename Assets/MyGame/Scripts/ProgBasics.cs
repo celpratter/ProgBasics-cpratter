@@ -25,6 +25,9 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Relationale Operatoren > " + (28637 > 28638));
         Debug.Log("Relationale Operatoren >= " + (28637 >= 28638));
 
+        // Gleichheits Operatoren
+        Debug.Log("Gleichheits Operatoren == " + (3 == 3));
+        Debug.Log("Gleichheits Operatoren != " + (2 != 2));
     }
 
     // Update is called once per frame
