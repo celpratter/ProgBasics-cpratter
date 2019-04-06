@@ -19,6 +19,11 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Additive Operatoren + " + (1 + 1));
         Debug.Log("Additive Operatoren - " + (100 - 1));
 
+        // Relationale Operatoren
+        Debug.Log("Relationale Operatoren < " + (2 < 3));
+        Debug.Log("Relationale Operatoren <= " + (2 <= 2));
+        Debug.Log("Relationale Operatoren > " + (28637 > 28638));
+        Debug.Log("Relationale Operatoren >= " + (28637 >= 28638));
 
     }
 
