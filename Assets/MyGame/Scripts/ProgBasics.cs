@@ -15,6 +15,11 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Multiplikative Operatoren / " + (36 / 4));
         Debug.Log("Multiplikative Operatoren % " + (7 % 2));
 
+        // Additive Operatoren
+        Debug.Log("Additive Operatoren + " + (1 + 1));
+        Debug.Log("Additive Operatoren - " + (100 - 1));
+
+
     }
 
     // Update is called once per frame
