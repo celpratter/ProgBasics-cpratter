@@ -9,6 +9,20 @@ public class ProgBasics : MonoBehaviour
     void Start()
     {
         Operators();
+        XY();
+    }
+
+    // 
+    public void XY()
+    {
+        Debug.Log("Methode XY");
+        ABC();
+    }
+
+    public void ABC()
+    {
+        Debug.Log("ABC wird ausgeführt");
+        Debug.Log(1 + 2);
     }
 
 
