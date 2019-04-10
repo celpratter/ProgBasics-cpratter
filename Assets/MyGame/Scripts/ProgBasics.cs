@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class ProgBasics : MonoBehaviour
 {
+    public int test1;
+    public float test2;
+    public string test3;
 
     // Use this for initialization
     void Start()
     {
+        test1 = 1;
+        Debug.Log("test 1 in start " + test1);
         Operators();
         XY();
 
-        // values for a and b
+        // add values for parameters
         AddNumbers(3, 4);
         MultNumbers(2, 1, 8, 4);
-        // Combine();
 
+        // combine all methodes
+        Combine();
+
+        // return type
         Debug.Log(MyText("cpratter"));
         string drama = MyText("cpratter");
-        Debug.Log(drama);
+        Debug.Log("neu " + drama);
 
     }
 
@@ -42,8 +50,11 @@ public class ProgBasics : MonoBehaviour
     {
         int c = a + b;
         Debug.Log("+ numbers " + c);
+        test1 = 3;
+        Debug.Log("test 1 in AddNumbers " + test1);
     }
 
+    // methode add parameters, new variables
     public void MultNumbers(int d, int e, int f, int g)
     {
         int h = d * e * f * g;
