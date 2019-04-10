@@ -14,6 +14,8 @@ public class ProgBasics : MonoBehaviour
         // values for a and b
         AddNumbers(3, 4);
         MultNumbers(2, 1, 8, 4);
+
+        // Combine();
     }
 
     // methode referes to methode ABC
@@ -42,6 +44,14 @@ public class ProgBasics : MonoBehaviour
     {
         int h = d * e * f * g;
         Debug.Log("* numbers " + h);
+    }
+
+    // combines all methodes
+    public void Combine()
+    {
+        Operators();
+        AddNumbers(20, 35);
+        MultNumbers(2, 6, 8, 4);
     }
 
     // Methode Operatoren
