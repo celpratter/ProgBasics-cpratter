@@ -8,6 +8,13 @@ public class ProgBasics : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Operators();
+    }
+
+
+    // Methode Operatoren
+    public void Operators()
+    {
         Debug.Log("erste Tests mit Operatoren");
 
         //  Multiplikative Operatoren
@@ -33,6 +40,7 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Logische Operatoren && " + (3 > 2 && 1 < 2));
         Debug.Log("Logische Operatoren | " + (3 < 2 | 1 < 2));
     }
+
 
     // Update is called once per frame
     void Update()
