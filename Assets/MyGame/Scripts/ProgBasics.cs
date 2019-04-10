@@ -10,14 +10,19 @@ public class ProgBasics : MonoBehaviour
     {
         Operators();
         XY();
+
+        // values for a and b
+        AddNumbers(3, 4);
+        MultNumbers(2, 1, 8, 4);
     }
 
-    // 
+    // methode referes to methode ABC
     public void XY()
     {
         Debug.Log("Methode XY");
         ABC();
     }
+
 
     public void ABC()
     {
@@ -25,6 +30,19 @@ public class ProgBasics : MonoBehaviour
         Debug.Log(1 + 2);
     }
 
+
+    // methode add parameters, new variables
+    public void AddNumbers(int a, int b)
+    {
+        int c = a + b;
+        Debug.Log("+ numbers " + c);
+    }
+
+    public void MultNumbers(int d, int e, int f, int g)
+    {
+        int h = d * e * f * g;
+        Debug.Log("* numbers " + h);
+    }
 
     // Methode Operatoren
     public void Operators()
