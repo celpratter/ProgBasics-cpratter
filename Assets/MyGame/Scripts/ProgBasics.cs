@@ -14,8 +14,12 @@ public class ProgBasics : MonoBehaviour
         // values for a and b
         AddNumbers(3, 4);
         MultNumbers(2, 1, 8, 4);
-
         // Combine();
+
+        Debug.Log(MyText("cpratter"));
+        string drama = MyText("cpratter");
+        Debug.Log(drama);
+
     }
 
     // methode referes to methode ABC
@@ -52,6 +56,13 @@ public class ProgBasics : MonoBehaviour
         Operators();
         AddNumbers(20, 35);
         MultNumbers(2, 6, 8, 4);
+    }
+
+
+    // return type methode string
+    public string MyText(string myname)
+    {
+        return "Drama" + " " + myname;
     }
 
     // Methode Operatoren
