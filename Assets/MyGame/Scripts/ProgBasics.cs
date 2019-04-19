@@ -7,26 +7,35 @@ public class ProgBasics : MonoBehaviour
     public int test1;
     public float test2;
     public string test3;
+    public string vorname = "Celina";
+    public string nachname = "Pratter";
+
+
 
     // Use this for initialization
     void Start()
     {
+
         test1 = 1;
         Debug.Log("test 1 in start " + test1);
-        Operators();
         XY();
 
         // add values for parameters
         AddNumbers(3, 4);
         MultNumbers(2, 1, 8, 4);
 
-        // combine all methodes
+        // all methodes combined
         Combine();
 
         // return type
         Debug.Log(MyText("cpratter"));
         string drama = MyText("cpratter");
         Debug.Log("neu " + drama);
+
+        meinName();
+        intAdd();
+
+        Debug.Log(StadtLand("Salzburg", "Austria"));
 
     }
 
@@ -69,6 +78,28 @@ public class ProgBasics : MonoBehaviour
         MultNumbers(2, 6, 8, 4);
     }
 
+    public void meinName()
+    {
+        Debug.Log("mein Name: " + vorname + "" + nachname);
+
+    }
+
+    public void intAdd()
+    {
+        int eins;
+        eins = 1;
+        int vier;
+        vier = 4;
+
+        Debug.Log("int addieren " + (eins + vier));
+    }
+
+
+
+    public string StadtLand(string stadt, string land)
+    {
+        return "Heimat: " + stadt + ", " + land;
+    }
 
     // return type methode string
     public string MyText(string myname)
