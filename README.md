@@ -12,8 +12,7 @@ Mit Debug.Log in einem C# Script wurden die verschiedenen (Multiplikative, Addit
 
 ### Screenshots
 - Code Operators
-<div> <img src="./Screenshots/code_operatoren" width="300"> <div>
+<div> <img src="./Screenshots/code_operatoren.jpg" width="300"> <div>
 
 - Unity Console
-<div> <img src="./Screenshots/unityConsole" width="300"> </div
-
+<div> <img src="./Screenshots/unityConsole.jpg" width="300"> </div>
