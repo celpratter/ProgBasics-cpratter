@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProgBasics : MonoBehaviour
 {
+    //public variables
     public int test1;
     public float test2;
     public string test3;
@@ -11,38 +12,57 @@ public class ProgBasics : MonoBehaviour
     public string nachname = "Pratter";
 
 
-
     // Use this for initialization
     void Start()
     {
 
         test1 = 1;
-        Debug.Log("test 1 in start " + test1);
+        test2 = 0.25F;
+        test3 = "test3";
+        Debug.Log("test 1 in start (mit int): " + test1);
+        Debug.Log("test 2 in start (mit float): " + test2);
+        Debug.Log("test 3 in start (mit string)" + test3);
+        AllTests();
+
+        WerBinIch();
         XY();
+        ABC();
 
         // add values for parameters
         AddNumbers(3, 4);
         MultNumbers(2, 1, 8, 4);
 
         // all methodes combined
-        Combine();
+        // Combine();
+
+        meinName();
+        DatenParameter("Celina", 18, 4);
+        intAdd();
+
 
         // return type
         Debug.Log(MyText("cpratter"));
         string drama = MyText("cpratter");
         Debug.Log("neu " + drama);
 
-        meinName();
-        intAdd();
-
+        // return type
         Debug.Log(StadtLand("Salzburg", "Austria"));
+    }
 
+    public void AllTests()
+    {
+        Debug.Log("all tests: " + test1 + " " + test2 + " " + test3);
+    }
+
+    public void WerBinIch()
+    {
+        Debug.Log("Ich bin " + vorname + " " + nachname);
     }
 
     // methode referes to methode ABC
     public void XY()
     {
-        Debug.Log("Methode XY");
+        Debug.Log("Methode XY - führe ABC aus");
         ABC();
     }
 
@@ -58,7 +78,7 @@ public class ProgBasics : MonoBehaviour
     public void AddNumbers(int a, int b)
     {
         int c = a + b;
-        Debug.Log("+ numbers " + c);
+        Debug.Log("adding numbers numbers " + c);
         test1 = 3;
         Debug.Log("test 1 in AddNumbers " + test1);
     }
@@ -70,18 +90,14 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("* numbers " + h);
     }
 
-    // combines all methodes
-    public void Combine()
-    {
-        Operators();
-        AddNumbers(20, 35);
-        MultNumbers(2, 6, 8, 4);
-    }
-
     public void meinName()
     {
         Debug.Log("mein Name: " + vorname + "" + nachname);
+    }
 
+    public void DatenParameter(string username, int alter, int level)
+    {
+        Debug.Log("Name: " + username + "  " + "Alter: " + alter + "  " + "Level: " + level + "  ");
     }
 
     public void intAdd()
@@ -93,8 +109,6 @@ public class ProgBasics : MonoBehaviour
 
         Debug.Log("int addieren " + (eins + vier));
     }
-
-
 
     public string StadtLand(string stadt, string land)
     {
@@ -136,6 +150,13 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Logische Operatoren | " + (3 < 2 | 1 < 2));
     }
 
+    // combine methodes
+    public void Combine()
+    {
+        Operators();
+        AddNumbers(20, 35);
+        MultNumbers(2, 6, 8, 4);
+    }
 
     // Update is called once per frame
     void Update()
