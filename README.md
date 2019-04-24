@@ -1,6 +1,6 @@
 # ProgBasics-cpratter
 
-**Progress:** 100%
+**Progress:** 15%
 
 ### Development Platform
 - OS: MacOS 10.14.3
