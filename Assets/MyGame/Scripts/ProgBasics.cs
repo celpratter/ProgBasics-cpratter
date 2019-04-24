@@ -11,11 +11,9 @@ public class ProgBasics : MonoBehaviour
     public string vorname = "Celina";
     public string nachname = "Pratter";
 
-
     // Use this for initialization
     void Start()
     {
-
         test1 = 1;
         test2 = 0.25F;
         test3 = "test3";
@@ -28,10 +26,10 @@ public class ProgBasics : MonoBehaviour
         WerBinIch();
         XY();
         ABC();
-        meinName();
-        intAdd();
-        changeTest2();
-        changeTest3();
+        MeinName();
+        IntAdd();
+        ChangeTest2();
+        ChangeTest3();
 
         // add values for parameters
         AddNumbers(3, 4);
@@ -89,7 +87,7 @@ public class ProgBasics : MonoBehaviour
         Debug.Log("Ich bin " + vorname + " " + nachname);
     }
 
-    public void meinName()
+    public void MeinName()
     {
         Debug.Log("Vorname: " + vorname + " Nachname: " + nachname);
     }
@@ -107,7 +105,7 @@ public class ProgBasics : MonoBehaviour
         Debug.Log(1 + 2);
     }
 
-    public void intAdd()
+    public void IntAdd()
     {
         int eins;
         eins = 1;
@@ -118,13 +116,13 @@ public class ProgBasics : MonoBehaviour
     }
 
     //change values
-    public void changeTest2()
+    public void ChangeTest2()
     {
         test2 = 123.45F;
         Debug.Log("changed test2  " + test2);
     }
 
-    public void changeTest3()
+    public void ChangeTest3()
     {
         test3 = "new test3";
         Debug.Log("changed test3  " + test3);
@@ -173,11 +171,5 @@ public class ProgBasics : MonoBehaviour
         Operators();
         AddNumbers(20, 35);
         MultNumbers(2, 6, 8, 4);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
